@@ -1,0 +1,1435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Landkit</title>
+  </head>
+  <body class="bg-light">
+
+    <!-- MODALS
+    ================================================== -->
+    <!-- Example -->
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <div class="text-center">
+              <img src="../assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+
+            <!-- Heading -->
+            <h2 class="font-weight-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <!-- First name -->
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">First name</label>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                  <!-- Last name -->
+                  <div class="form-label-group">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <!-- Email -->
+                  <div class="form-label-group">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                  <!-- Password -->
+                  <div class="form-label-group">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+              
+                  <!-- Submit -->
+                  <button class="btn btn-block btn-primary mt-3 lift">
+                    Request a demo
+                  </button>
+
+                </div>
+              </div>
+            </form>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                <!-- Shape -->
+                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M116 0H51V172C76 384 0 517 0 517V690H116V0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+
+                  <!-- Close -->
+                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+              
+                  <!-- Heading -->
+                  <h2 class="mb-0 font-weight-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="sr-only" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="sr-only" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
+                    </div>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-primary" type="submit">
+                      Sign up
+                    </button>
+
+                  </form>
+
+                  <!-- Text -->
+                  <p class="mb-0 font-size-sm text-center text-muted">
+                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
+                  </p>
+
+                </div>
+              </div>
+
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Close -->
+            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-0 font-weight-bold text-center" id="modalSignupVerticalTitle">
+                Sign Up
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="sr-only" for="modalSignupVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="sr-only" for="modalSignupVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                  Sign up
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-muted">
+                Already have an account? <a href="./signin-illustration.html">Log in</a>.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+
+                <!-- Shape -->
+                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M116 0H51V172C76 384 0 517 0 517V690H116V0Z" fill="currentColor"/>
+                  </svg>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+
+                  <!-- Close -->
+                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+              
+                  <!-- Heading -->
+                  <h2 class="mb-0 font-weight-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+
+                  <!-- Form -->
+                  <form class="mb-6">
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="sr-only" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="sr-only" for="modalSigninHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Create a password">
+                    </div>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-primary" type="submit">
+                      Sign in
+                    </button>
+
+                  </form>
+
+                  <!-- Text -->
+                  <p class="mb-0 font-size-sm text-center text-muted">
+                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+                  </p>
+
+                </div>
+              </div>
+
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+
+            <!-- Close -->
+            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
+
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0V480H2880V0H2160Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body">
+
+              <!-- Heading -->
+              <h2 class="mb-0 font-weight-bold text-center" id="modalSigninVerticalTitle">
+                Sign In
+              </h2>
+
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+
+              <!-- Form -->
+              <form class="mb-6">
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="sr-only" for="modalSigninVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="sr-only" for="modalSigninVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Create a password">
+                </div>
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                  Sign in
+                </button>
+
+              </form>
+
+              <!-- Text -->
+              <p class="mb-0 font-size-sm text-center text-muted">
+                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/brand.svg" class="navbar-brand-img" alt="...">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLandings" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Landings
+              </a>
+              <div class="dropdown-menu dropdown-menu-xl p-0" aria-labelledby="navbarLandings">
+                <div class="row no-gutters">
+                  <div class="col-12 col-lg-6">
+                    <div class="dropdown-img-left" style="background-image: url(./assets/img/photos/photo-3.jpg);">
+
+                      <!-- Heading -->
+                      <h4 class="font-weight-bold text-white mb-0">
+                        Want to see an overview?
+                      </h4>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-white">
+                        See all the pages at once.
+                      </p>
+
+                      <!-- Button -->
+                      <a href="./overview.html" class="btn btn-sm btn-white shadow-dark fonFt-size-sm">
+                        View all pages
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="dropdown-body">
+                      <div class="row no-gutters">
+                        <div class="col-6">
+
+                          <!-- Heading -->
+                          <h6 class="dropdown-header">
+                            Services
+                          </h6>
+
+                          <!-- List -->
+                          <a class="dropdown-item" href="./coworking.html">
+                            Coworking
+                          </a>
+                          <a class="dropdown-item" href="./rental.html">
+                            Rental
+                          </a>
+                          <a class="dropdown-item mb-5" href="./job.html">
+                            Job Listing
+                          </a>
+
+                          <!-- Heading -->
+                          <h6 class="dropdown-header">
+                            Apps
+                          </h6>
+
+                          <!-- List -->
+                          <a class="dropdown-item" href="./desktop-app.html">
+                            Desktop
+                          </a>
+                          <a class="dropdown-item" href="./mobile-app.html">
+                            Mobile
+                          </a>
+
+                        </div>
+                        <div class="col-6">
+
+                          <!-- Heading -->
+                          <h6 class="dropdown-header">
+                            Web
+                          </h6>
+
+                          <!-- List -->
+                          <a class="dropdown-item" href="./index.html">
+                            Basic
+                          </a>
+                          <a class="dropdown-item" href="./enterprise.html">
+                            Enterprise
+                          </a>
+                          <a class="dropdown-item" href="./service.html">
+                            Service
+                          </a>
+                          <a class="dropdown-item" href="./cloud.html">
+                            Cloud Hosting
+                          </a>
+                          <a class="dropdown-item" href="./agency.html">
+                            Agency <span class="h6 text-uppercase text-primary">(new)</span>
+                          </a>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    <div class="row no-gutters">
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          Career
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./careers.html">
+                          Listing
+                        </a>
+                        <a class="dropdown-item mb-5" href="./career-single.html">
+                          Opening
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          Company
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./about.html">
+                          About
+                        </a>
+                        <a class="dropdown-item" href="./pricing.html">
+                          Pricing
+                        </a>
+                        <a class="dropdown-item mb-5 mb-lg-0" href="./terms-of-service.html">
+                          Terms
+                        </a>
+
+                      </div>
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          Help center
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./help-center.html">
+                          Overview
+                        </a>
+                        <a class="dropdown-item mb-5" href="./help-center-article.html">
+                          Article
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          Contact
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./contact.html">
+                          Basic
+                        </a>
+                        <a class="dropdown-item" href="./contact-alt.html">
+                          Cover
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="row no-gutters">
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          Blog
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./blog.html">
+                          Rich View
+                        </a>
+                        <a class="dropdown-item" href="./blog-post.html">
+                          Article
+                        </a>
+                        <a class="dropdown-item" href="./blog-showcase.html">
+                          Showcase
+                        </a>
+                        <a class="dropdown-item mb-5 mb-lg-0" href="./blog-search.html">
+                          Search
+                        </a>
+
+                      </div>
+                      <div class="col-12 col-lg-6">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header">
+                          Portfolio <span class="h6 text-uppercase text-primary">(new)</span>
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="./portfolio-masonry.html">
+                          Masonry
+                        </a>
+                        <a class="dropdown-item" href="./portfolio-grid-rows.html">
+                          Grid Rows
+                        </a>
+                        <a class="dropdown-item" href="./portfolio-parallax.html">
+                          Parallax
+                        </a>
+                        <a class="dropdown-item" href="./portfolio-case-study.html">
+                          Case Study
+                        </a>
+                        <a class="dropdown-item" href="./portfolio-sidebar.html">
+                          Sidebar
+                        </a>
+                        <a class="dropdown-item" href="./portfolio-sidebar-fluid.html">
+                          Sidebar: Fluid
+                        </a>
+                        <a class="dropdown-item" href="./portfolio-grid.html">
+                          Basic Grid
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarAccount">
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#">
+                    Sign In
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./signin-cover.html">
+                      Side Cover
+                    </a>
+                    <a class="dropdown-item" href="./signin-illustration.html">
+                      Illustration
+                    </a>
+                    <a class="dropdown-item" href="./signin.html">
+                      Basic
+                    </a>
+                    <a class="dropdown-item" data-toggle="modal" href="#modalSigninHorizontal">
+                      Modal Horizontal
+                    </a>
+                    <a class="dropdown-item" data-toggle="modal" href="#modalSigninVertical">
+                      Modal Vertical
+                    </a>
+                  </div>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#">
+                    Sign Up
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./signup-cover.html">
+                      Side Cover
+                    </a>
+                    <a class="dropdown-item" href="./signup-illustration.html">
+                      Illustration
+                    </a>
+                    <a class="dropdown-item" href="./signup.html">
+                      Basic
+                    </a>
+                    <a class="dropdown-item" data-toggle="modal" href="#modalSignupHorizontal">
+                      Modal Horizontal
+                    </a>
+                    <a class="dropdown-item" data-toggle="modal" href="#modalSignupVertical">
+                      Modal Vertical
+                    </a>
+                  </div>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#">
+                    Password Reset
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./password-reset-cover.html">
+                      Side Cover
+                    </a>
+                    <a class="dropdown-item" href="./password-reset-illustration.html">
+                      Illustration
+                    </a>
+                    <a class="dropdown-item" href="./password-reset.html">
+                      Basic
+                    </a>
+                  </div>
+                </li>
+                <li class="dropdown-item dropright">
+                  <a class="dropdown-link dropdown-toggle" data-toggle="dropdown" href="#">
+                    Error
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./error-cover.html">
+                      Side Cover
+                    </a>
+                    <a class="dropdown-item" href="./error-illustration.html">
+                      Illustration
+                    </a>
+                    <a class="dropdown-item" href="./error.html">
+                      Basic
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Documentation
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDocumentation">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="./docs/index.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+                          <title>Stockholm-icons / General / Clipboard</title>
+                          <desc>Created with Sketch.</desc>
+                          <g id="Stockholm-icons-/-General-/-Clipboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                              <path d="M8,3 L8,3.5 C8,4.32842712 8.67157288,5 9.5,5 L14.5,5 C15.3284271,5 16,4.32842712 16,3.5 L16,3 L18,3 C19.1045695,3 20,3.8954305 20,5 L20,21 C20,22.1045695 19.1045695,23 18,23 L6,23 C4.8954305,23 4,22.1045695 4,21 L4,5 C4,3.8954305 4.8954305,3 6,3 L8,3 Z" id="Combined-Shape" fill="#335EEA" opacity="0.3"></path>
+                              <path d="M11,2 C11,1.44771525 11.4477153,1 12,1 C12.5522847,1 13,1.44771525 13,2 L14.5,2 C14.7761424,2 15,2.22385763 15,2.5 L15,3.5 C15,3.77614237 14.7761424,4 14.5,4 L9.5,4 C9.22385763,4 9,3.77614237 9,3.5 L9,2.5 C9,2.22385763 9.22385763,2 9.5,2 L11,2 Z" id="Combined-Shape" fill="#335EEA"></path>
+                              <rect id="Rectangle-152" fill="#335EEA" opacity="0.3" x="7" y="10" width="5" height="2" rx="1"></rect>
+                              <rect id="Rectangle-152-Copy" fill="#335EEA" opacity="0.3" x="7" y="14" width="9" height="2" rx="1"></rect>
+                          </g>
+                      </svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Documentation
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Customizing and building
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="./docs/alerts.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+                          <title>Stockholm-icons / Layout / Layout-4-blocks</title>
+                          <desc>Created with Sketch.</desc>
+                          <g id="Stockholm-icons-/-Layout-/-Layout-4-blocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <rect id="bound" x="0" y="0" width="24" height="24"></rect>
+                              <rect id="Rectangle-7" fill="#335EEA" x="4" y="4" width="7" height="7" rx="1.5"></rect>
+                              <path d="M5.5,13 L9.5,13 C10.3284271,13 11,13.6715729 11,14.5 L11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L5.5,20 C4.67157288,20 4,19.3284271 4,18.5 L4,14.5 C4,13.6715729 4.67157288,13 5.5,13 Z M14.5,4 L18.5,4 C19.3284271,4 20,4.67157288 20,5.5 L20,9.5 C20,10.3284271 19.3284271,11 18.5,11 L14.5,11 C13.6715729,11 13,10.3284271 13,9.5 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 Z M14.5,13 L18.5,13 C19.3284271,13 20,13.6715729 20,14.5 L20,18.5 C20,19.3284271 19.3284271,20 18.5,20 L14.5,20 C13.6715729,20 13,19.3284271 13,18.5 L13,14.5 C13,13.6715729 13.6715729,13 14.5,13 Z" id="Combined-Shape" fill="#335EEA" opacity="0.3"></path>
+                          </g>
+                      </svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Components
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Full list of components
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="./docs/changelog.html">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+                          <title>Stockholm-icons / Files / File</title>
+                          <desc>Created with Sketch.</desc>
+                          <g id="Stockholm-icons-/-Files-/-File" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                              <path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" id="Combined-Shape" fill="#335EEA" opacity="0.3"></path>
+                              <rect id="Rectangle" fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"></rect>
+                              <rect id="Rectangle-Copy" fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"></rect>
+                          </g>
+                      </svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ml-4">
+
+                      <!-- Heading -->
+                      <h6 class="font-weight-bold text-uppercase text-primary mb-0">
+                        Changelog
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-gray-700 mb-0">
+                        Keep track of changes
+                      </p>
+
+                    </div>
+
+                    <!-- Badge -->
+                    <span class="badge badge-pill badge-primary-soft ml-auto">
+                      1.1.2
+                    </span>
+
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="https://themes.getbootstrap.com/product/landkit/" target="_blank">
+            Buy now
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="mt-n10">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-center min-vh-100 py-8 py-md-11">
+          <div class="col-12 col-md-8 col-lg-7 mt-auto text-center">
+
+            <!-- Heading -->
+            <h1 class="display-1 mb-0 font-weight-bold">
+              We <span class="text-primary">Design & Build</span> Products For All.
+            </h1>
+
+          </div>
+          <div class="col-12 mt-auto text-center">
+
+            <!-- Button -->
+            <a class="btn btn-primary btn-rounded-circle shadow" data-toggle="smooth-scroll" data-offset="0" href="#sectionTwo">
+              <i class="fe fe-arrow-down"></i>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- IMAGE
+    ================================================== -->
+    <a class="d-block text-decoration-none" id="sectionTwo" data-jarallax data-speed=".8" href="portfolio-case-study.html" style="background-image: url(assets/img/portfolio/portfolio-cover-4.jpg)">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center min-vh-100 py-8 py-md-11">
+          <div class="col-12">
+
+            <!-- Brand -->
+            <div class="img-fluid text-white svg-shim mx-auto mb-5" style="max-width: 320px;">
+              <svg viewBox="0 0 222 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M193.541 43.3088C183.715 43.3088 175.414 34.9343 175.414 25.0219C175.414 15.109 183.715 6.73451 193.541 6.73451C203.367 6.73451 211.668 15.109 211.668 25.0219H211.667C211.667 28.7822 210.47 32.3195 208.451 35.2639L202.929 29.7423L198.338 34.3335L203.911 39.9068C200.95 42.0382 197.363 43.3088 193.541 43.3088ZM219.245 46.0578L213.727 40.5401C217.167 36.3139 219.204 30.9422 219.204 25.0219C219.204 11.0759 207.931 0.152832 193.541 0.152832C179.15 0.152832 167.877 11.0759 167.877 25.0219C167.877 38.9674 179.15 49.891 193.541 49.891C199.395 49.891 204.732 48.0831 209.005 45L214.654 50.649L219.245 46.0578Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.12109 48.8581V1.18164H8.18227V42.2758H36.9789V48.8581H1.12109Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M121.159 26.569H136.033C143.791 26.569 146.543 21.505 146.543 17.167C146.543 12.8296 143.791 7.76556 136.033 7.76556H121.159V26.569ZM144.462 48.8581L134.07 33.1529H121.159V48.8581H114.098V1.18164H136.747C146.83 1.18164 153.605 7.60498 153.605 17.167C153.605 23.6016 149.323 29.0861 142.697 31.1372L141.294 31.5723L153.411 48.8581H144.462Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M60.4042 48.8581L75.2352 12.4287L89.9342 48.8581H97.8089L79.0881 4.66057C78.1947 2.55165 76.1268 1.18164 73.8365 1.18164H58.7686V2.41465C58.7686 5.10695 60.9511 7.28943 63.644 7.28943H70.7574L52.5918 48.8581H60.4042Z" fill="currentColor"/>
+              </svg>
+
+            </div>
+
+            <!-- Subheading -->
+            <p class="mb-0 font-weight-bold text-center text-uppercase text-white letter-spacing-lg">
+              Bottle Redesigned
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- IMAGE
+    ================================================== -->
+    <a class="d-block text-decoration-none" id="sectionTwo" data-jarallax data-speed=".8" href="portfolio-sidebar.html" style="background-image: url(assets/img/portfolio/portfolio-cover-5.jpg)">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center min-vh-100 py-8 py-md-11">
+          <div class="col-12">
+
+            <!-- Brand -->
+            <div class="img-fluid text-white svg-shim mx-auto mb-5" style="max-width: 320px;">
+              <svg viewBox="0 0 322 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M39.324 37.7268V51.833H64.6943C60.6996 61.7732 51.0372 68.2536 40.3365 68.1696C26.4766 67.7039 15.4814 56.3191 15.4814 42.4337C15.4814 28.5483 26.4766 17.1635 40.3365 16.6978C49.2037 16.6637 57.4869 21.1212 62.3511 28.5447H79.3033C73.1577 12.377 57.6129 1.74633 40.3365 1.89647C18.1008 2.42141 0.448584 20.8029 0.796059 43.0704C1.14353 65.338 19.3606 83.1583 41.6019 82.9875C63.8431 82.8166 81.7849 64.7185 81.7911 42.4482C81.7861 40.8797 81.6895 39.3129 81.5018 37.7558H39.324V37.7268Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M91.0488 42.4483C90.6843 25.6013 100.542 10.2101 115.986 3.51387C131.429 -3.18231 149.385 0.149488 161.406 11.9422C173.428 23.7348 177.123 41.6409 170.753 57.2383C164.383 72.8357 149.217 83.0196 132.388 83C121.532 83.1236 111.072 78.9177 103.317 71.3102C95.562 63.7026 91.148 53.3185 91.0488 42.4483ZM157.903 42.4483C157.775 28.3894 146.315 17.0822 132.273 17.1618C118.232 17.2414 106.9 28.6778 106.932 42.7373C106.963 56.7967 118.346 68.1821 132.388 68.1986C139.202 68.2382 145.746 65.5313 150.545 60.6876C155.345 55.8439 157.996 49.2707 157.903 42.4483Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M184.633 3.19995H213.995C231.844 3.19995 240.754 10.9337 240.754 25.2427C240.936 31.5245 237.583 37.3774 232.076 40.3917C239.349 43.3112 243.989 50.5114 243.647 58.3503C243.647 73.9337 233.985 81.6675 216.136 81.6675H184.633V3.19995ZM199.936 16.9586V34.3379H214.4C223.397 34.3379 225.306 29.5586 225.306 25.2137C225.306 20.8689 222.414 16.9296 215.152 16.9296H199.936V16.9586ZM199.936 48.3572V67.9379H216.744C225.422 67.9379 228.17 62.9268 228.17 58.0317C228.17 53.1365 225.277 48.3572 216.744 48.3572H199.936Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M303.874 3.19995L284.492 36.1917L264.532 3.19995H246.307L276.132 50.4137L257.733 81.6675H275.322L321.347 3.19995H303.874Z" fill="currentColor"/>
+              </svg>
+
+            </div>
+
+            <!-- Subheading -->
+            <p class="mb-0 font-weight-bold text-center text-uppercase text-white letter-spacing-lg">
+              Toothbrush Prototype
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- QUOTE
+    ================================================== -->
+    <section>
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-center min-vh-100 py-8 py-md-11">
+          <div class="col-12 col-lg-10 col-xl-8">
+
+            <!-- Blockquote -->
+            <blockquote class="blockquote text-center">
+
+              <!-- Logo -->
+              <div class="img-fluid mb-5 mb-md-7 mx-auto svg-shim" style="max-width: 120px; color: #CB2027;">
+                <svg viewBox="0 0 2761 991" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="airbnb" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(130.000000, 105.000000)" fill="currentColor" fill-rule="nonzero" id="Shape">
+                      <path d="M1317.62854,196.830214 C1317.62854,224.94903 1294.97121,247.590764 1266.85239,247.590764 C1238.73357,247.590764 1216.09184,224.94903 1216.09184,196.830214 C1216.09184,168.711397 1237.96116,146.069664 1266.85239,146.069664 C1295.76702,146.849875 1317.62854,169.49941 1317.62854,196.830214 Z M1108.31345,299.147129 L1108.31345,311.646115 C1108.31345,311.646115 1084.11129,280.390848 1032.56273,280.390848 C947.441668,280.390848 881.045683,345.218609 881.045683,435.028737 C881.045683,524.066455 946.661457,589.666625 1032.56273,589.666625 C1084.8915,589.666625 1108.31345,557.646752 1108.31345,557.646752 L1108.31345,570.918146 C1108.31345,577.167639 1113.01032,581.841105 1119.25201,581.841105 L1182.50374,581.841105 L1182.50374,288.177358 L1119.25201,288.177358 C1113.01032,288.200764 1108.31345,293.677848 1108.31345,299.147129 Z M1108.31345,487.357512 C1096.61028,504.545567 1073.17273,519.385187 1045.06171,519.385187 C995.081373,519.385187 956.804204,488.145525 956.804204,435.028737 C956.804204,381.919751 995.081373,350.680088 1045.06171,350.680088 C1072.40032,350.680088 1097.39049,366.299919 1108.31345,382.699962 L1108.31345,487.357512 Z M1229.37104,288.200764 L1304.34155,288.200764 L1304.34155,581.864512 L1229.37104,581.864512 L1229.37104,288.200764 Z M2349.32541,280.383046 C2297.77685,280.383046 2273.55909,311.638313 2273.55909,311.638313 L2273.55909,146.849875 L2198.58858,146.849875 L2198.58858,581.864512 L2261.85592,581.864512 C2268.10541,581.864512 2272.77888,576.39523 2272.77888,570.925949 L2272.77888,557.654554 C2272.77888,557.654554 2296.99664,589.674427 2348.52959,589.674427 C2433.66626,589.674427 2500.04664,524.089862 2500.04664,435.052143 C2500.04664,346.014425 2433.66626,280.383046 2349.32541,280.383046 Z M2336.82642,518.597174 C2307.91959,518.597174 2285.27786,503.773158 2273.55909,486.5773 L2273.55909,381.919751 C2285.27786,366.299919 2310.26803,349.899877 2336.82642,349.899877 C2386.80676,349.899877 2425.07613,381.139539 2425.07613,434.248525 C2425.07613,487.357512 2386.81457,518.597174 2336.82642,518.597174 Z M2159.5468,407.705735 L2159.5468,582.644723 L2084.56069,582.644723 L2084.56069,416.28806 C2084.56069,367.875946 2068.94086,348.339454 2026.79384,348.339454 C2004.15211,348.339454 1980.71456,360.058229 1965.85154,377.246285 L1965.85154,581.872314 L1890.89663,581.872314 L1890.89663,288.208566 L1950.2317,288.208566 C1956.4812,288.208566 1961.17027,293.677848 1961.17027,299.147129 L1961.17027,311.646115 C1983.03959,288.988777 2011.93082,280.390848 2040.82204,280.390848 C2073.62993,280.390848 2100.96854,289.776791 2122.83786,308.517467 C2149.38065,330.386791 2159.5468,358.497806 2159.5468,407.705735 Z M1708.89673,280.383046 C1657.36377,280.383046 1633.14601,311.638313 1633.14601,311.638313 L1633.14601,146.849875 L1558.1755,146.849875 L1558.1755,581.864512 L1621.42724,581.864512 C1627.67673,581.864512 1632.3658,576.39523 1632.3658,570.925949 L1632.3658,557.654554 C1632.3658,557.654554 1656.58356,589.674427 1708.11652,589.674427 C1793.25318,589.674427 1859.63356,524.089862 1859.63356,435.052143 C1860.41377,346.006622 1794.03339,280.383046 1708.89673,280.383046 Z M1696.39775,518.597174 C1667.50652,518.597174 1644.86479,503.773158 1633.14601,486.5773 L1633.14601,381.919751 C1644.86479,366.299919 1669.85496,349.899877 1696.39775,349.899877 C1746.39369,349.899877 1784.65525,381.139539 1784.65525,434.248525 C1784.65525,487.357512 1746.39369,518.597174 1696.39775,518.597174 Z M1493.34774,280.383046 C1515.98948,280.383046 1527.70825,284.299707 1527.70825,284.299707 L1527.70825,353.800934 C1527.70825,353.800934 1465.22893,332.711821 1426.18715,377.238483 L1426.18715,582.636921 L1351.20104,582.636921 L1351.20104,288.200764 L1414.46838,288.200764 C1420.71787,288.200764 1425.39134,293.670046 1425.39134,299.139327 L1425.39134,311.638313 C1439.46635,295.230468 1469.9258,280.383046 1493.34774,280.383046 Z M714.704624,555.306117 C710.803568,545.935779 706.894709,535.78523 702.993652,527.187301 C696.736357,513.135694 690.486864,499.848695 685.033187,487.357512 L684.252976,486.5773 C630.355976,369.420765 572.573524,250.719411 511.64682,133.57848 L509.306186,128.881608 C502.898081,116.729582 496.653228,104.492167 490.573312,92.1726639 C482.755594,78.1054534 474.953481,63.2814378 462.454495,49.2142273 C437.464326,17.9745651 401.535593,0.78650921 363.274029,0.78650921 C324.216649,0.78650921 289.07593,17.9745651 263.313352,47.6460025 C251.594577,61.6976088 242.996648,76.5372286 235.194535,90.6044391 C229.099222,102.916209 222.854469,115.153428 216.46166,127.313383 L214.113224,132.010255 C153.974534,249.151186 95.4040683,367.860342 41.5148708,485.009075 L40.7268574,486.561696 C35.265378,499.076286 29.008083,512.347681 22.7585901,526.391485 C18.8575334,534.989414 14.9564767,544.359752 11.05542,554.510302 C0.897068278,583.401528 -2.23157921,610.740133 1.68508173,638.866752 C10.2752086,697.44502 49.3169843,746.629543 103.213984,768.514471 C123.522885,777.1124 144.611998,781.013457 166.47352,781.013457 C172.723012,781.013457 180.525126,780.233246 186.782421,779.445232 C212.560604,776.324387 239.111196,767.742062 264.889379,752.902442 C296.909252,734.934175 327.368703,709.171597 361.72921,671.682441 C396.089718,709.171597 427.32938,734.934175 458.569042,752.902442 C484.355027,767.742062 510.897817,776.324387 536.668198,779.445232 C542.917691,780.241048 550.735408,781.013457 556.984901,781.013457 C578.854225,781.013457 600.715747,777.1124 620.236635,768.514471 C674.913846,746.629543 713.17541,696.664809 721.773339,638.866752 C727.976019,611.535949 724.855174,584.212948 714.704624,555.306117 Z M362.486015,595.916118 C320.30779,542.807132 292.969185,492.826793 283.606649,450.664172 C279.705592,432.695905 278.917578,417.076074 281.266015,403.016665 C282.818635,390.51768 287.515507,379.579117 293.765,370.208778 C308.60462,349.13527 333.594789,335.848271 362.493818,335.848271 C391.400648,335.848271 417.171029,348.347256 431.230437,370.208778 C437.47993,379.579117 442.161198,390.525482 443.737225,403.016665 C446.070057,417.083876 445.289845,433.476116 441.388789,450.664172 C431.987242,492.046582 404.648637,542.034723 362.486015,595.916118 Z M674.086822,632.625062 C668.625343,673.235062 641.286737,708.391385 603.025173,724.011216 C584.284496,731.81333 563.967793,734.161766 543.674496,731.81333 C524.153608,729.464894 504.617116,723.215401 484.323819,711.512231 C456.205002,695.876795 428.093987,671.682441 395.2861,635.745907 C446.826862,572.494173 478.066524,514.688315 489.785298,463.155356 C495.25458,438.937596 496.042593,417.076074 493.686355,396.75937 C490.573312,377.238483 483.535805,359.270215 472.605045,343.650384 C448.379482,308.494061 407.76168,288.200764 362.478213,288.200764 C317.194747,288.200764 276.576944,309.289877 252.366986,343.650384 C241.436226,359.270215 234.398719,377.238483 231.277874,396.75937 C228.157028,417.076074 228.929438,439.717807 235.178931,463.155356 C246.889903,514.688315 278.909776,573.266583 329.670326,636.526118 C297.650453,672.454851 268.751425,696.672611 240.632608,712.292442 C220.323707,724.011216 200.810621,730.260709 181.289733,732.593541 C160.208423,734.941977 139.891719,731.81333 121.931254,724.791428 C83.6696897,709.171597 56.3310842,674.015273 50.8696048,633.405273 C48.5289708,613.884385 50.0815914,594.363497 57.899309,572.494173 C60.232141,564.676456 64.1488019,556.874342 68.0498586,547.504004 C73.5191401,535.005018 79.7530288,521.718019 86.0103238,508.446624 L86.7983372,506.894004 C140.679733,390.51768 198.469987,271.808524 258.608677,156.228015 L260.949311,151.531143 C267.206606,139.827973 273.456099,127.328987 279.69779,115.610213 C285.947283,103.111227 292.969185,91.3924525 301.567114,81.2341009 C317.967156,62.5090286 339.828678,52.3428748 364.046438,52.3428748 C388.264198,52.3428748 410.12572,62.5090286 426.525763,81.2341009 C435.123692,91.4158589 442.145594,103.134633 448.395087,115.610213 C454.652382,127.328987 460.901874,139.827973 467.135763,151.531143 L469.484199,156.228015 C528.705845,272.288756 585.728672,389.458413 640.52213,507.674215 L640.52213,508.454426 C646.779425,520.969016 652.240904,535.01282 658.490397,547.52741 C662.391454,556.882144 666.300313,564.684258 668.640947,572.501975 C674.874835,592.78747 677.215469,612.323962 674.086822,632.625062 Z"></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Text -->
+              <p class="h2 mb-5 mb-md-7">
+                “Before we even did a kickoff call, I knew we'd make the right choice to work with the Landkit team. Their body of work and influence on the industry speak volumes.”
+              </p>
+
+              <!-- Footer -->
+              <footer class="blockquote-footer mb-0">
+                <div class="avatar mr-3">
+                  <img src="assets/img/avatars/avatar-1.jpg" class="avatar-img rounded-circle" alt="...">
+                </div> <span class="h6 text-uppercase">Jacob Thornton</span>
+              </footer>
+
+            </blockquote>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE
+    ================================================== -->
+    <a class="d-block text-decoration-none" id="sectionTwo" data-jarallax data-speed=".8" href="portfolio-case-study.html" style="background-image: url(assets/img/portfolio/portfolio-cover-7.jpg)">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center min-vh-100 py-8 py-md-11">
+          <div class="col-12">
+
+            <!-- Brand -->
+            <div class="img-fluid text-white svg-shim mx-auto mb-5" style="max-width: 500px;">
+              <svg viewBox="0 0 501 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M414.353 0H372.393L350.893 59.4356H392.853L414.353 0Z" fill="currentColor"/>
+              <path d="M406.723 27.7251L431.517 59.4356H479.893L452.151 28.0716L500.353 0H451.11L406.723 27.7251Z" fill="currentColor"/>
+              <path d="M359.04 11.4366L363.201 0H255.873L241.135 40.8945C240.268 43.4937 240.095 46.4395 242.002 48.6922C242.696 49.3853 247.377 54.9303 248.418 55.97C250.151 57.8761 252.232 59.4356 255.7 59.4356H341.701L345.862 48.1723H285.696C282.055 48.1723 280.321 45.3998 281.188 42.6273L283.962 35.1762H350.544L354.705 23.7396H288.124L292.632 11.4366H359.04Z" fill="currentColor"/>
+              <path d="M235.761 0H128.953L107.453 59.4356H148.373L165.712 11.4366H196.228C199.523 11.4366 200.737 13.8625 200.043 16.1152C199.349 18.5411 198.309 21.4869 197.442 23.2197C196.402 25.6457 193.974 27.5518 190.333 27.5518C186.692 27.5518 161.724 27.5518 161.724 27.5518L186.519 59.2623H233.507L212.354 35.5227C212.354 35.5227 220.85 35.5227 225.011 35.5227C230.906 35.5227 234.374 32.4037 235.935 28.4182C237.669 23.9129 241.656 12.9961 242.87 9.35721C245.124 3.63892 241.656 0 235.761 0Z" fill="currentColor"/>
+              <path d="M121.497 0H4.97971L0.818359 11.4366H41.0447L23.7058 59.4356H63.2385L80.5775 11.4366H117.509L121.497 0Z" fill="currentColor"/>
+              </svg>
+
+            </div>
+
+            <!-- Subheading -->
+            <p class="mb-0 font-weight-bold text-center text-uppercase text-white letter-spacing-lg">
+              Ride for your campaign
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- IMAGE
+    ================================================== -->
+    <a class="d-block text-decoration-none" id="sectionTwo" data-jarallax data-speed=".8" href="portfolio-sidebar-fluid.html" style="background-image: url(assets/img/portfolio/portfolio-cover-2.jpg)">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center min-vh-100 py-8 py-md-11">
+          <div class="col-12">
+
+            <!-- Brand -->
+            <div class="img-fluid text-white svg-shim mx-auto mb-5" style="max-width: 320px;">
+              <svg viewBox="0 0 222 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M193.541 43.3088C183.715 43.3088 175.414 34.9343 175.414 25.0219C175.414 15.109 183.715 6.73451 193.541 6.73451C203.367 6.73451 211.668 15.109 211.668 25.0219H211.667C211.667 28.7822 210.47 32.3195 208.451 35.2639L202.929 29.7423L198.338 34.3335L203.911 39.9068C200.95 42.0382 197.363 43.3088 193.541 43.3088ZM219.245 46.0578L213.727 40.5401C217.167 36.3139 219.204 30.9422 219.204 25.0219C219.204 11.0759 207.931 0.152832 193.541 0.152832C179.15 0.152832 167.877 11.0759 167.877 25.0219C167.877 38.9674 179.15 49.891 193.541 49.891C199.395 49.891 204.732 48.0831 209.005 45L214.654 50.649L219.245 46.0578Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.12109 48.8581V1.18164H8.18227V42.2758H36.9789V48.8581H1.12109Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M121.159 26.569H136.033C143.791 26.569 146.543 21.505 146.543 17.167C146.543 12.8296 143.791 7.76556 136.033 7.76556H121.159V26.569ZM144.462 48.8581L134.07 33.1529H121.159V48.8581H114.098V1.18164H136.747C146.83 1.18164 153.605 7.60498 153.605 17.167C153.605 23.6016 149.323 29.0861 142.697 31.1372L141.294 31.5723L153.411 48.8581H144.462Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M60.4042 48.8581L75.2352 12.4287L89.9342 48.8581H97.8089L79.0881 4.66057C78.1947 2.55165 76.1268 1.18164 73.8365 1.18164H58.7686V2.41465C58.7686 5.10695 60.9511 7.28943 63.644 7.28943H70.7574L52.5918 48.8581H60.4042Z" fill="currentColor"/>
+              </svg>
+
+            </div>
+
+            <!-- Subheading -->
+            <p class="mb-0 font-weight-bold text-center text-uppercase text-white letter-spacing-lg">
+              The bright campaign
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- TOGETHER
+    ================================================== -->
+    <section>
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-between min-vh-100 py-8 py-md-11">
+          <div class="col-12 col-md-6 col-lg-5">
+
+            <!-- Badge -->
+            <span class="badge badge-pill badge-primary-soft mb-3">
+              <span class="h6 text-uppercase">Support</span>
+            </span>
+
+            <!-- Heading -->
+            <h2>
+              Our legacy will be working <br>
+              <span class="text-primary">with people we love</span>.
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-700 mb-6">
+              Are you doing good for the world? Do you care about the future of technology and the internet? Are you the type of person who “wastes” hundreds of hours of side projects and experiments? We probably love you.
+            </p>
+
+            <!-- Stats -->
+            <div class="d-flex mb-8 mb-md-0">
+              <div class="pr-5">
+                <h3 class="mb-0">
+                  <span data-toggle="countup" data-from="0" data-to="50" data-aos data-aos-id="countup:in">0</span>%
+                </h3>
+                <p class="text-gray-700 mb-0">
+                  Humanitarian
+                </p>
+              </div>
+              <div class="border-left border-gray-300"></div>
+              <div class="px-5">
+                <h3 class="mb-0">
+                  <span data-toggle="countup" data-from="0" data-to="100" data-aos data-aos-id="countup:in">0</span>%
+                </h3>
+                <p class="text-gray-700 mb-0">
+                  Satisfaction
+                </p>
+              </div>
+              <div class="border-left border-gray-300"></div>
+              <div class="pl-5">
+                <h3 class="mb-0">
+                  <span data-toggle="countup" data-from="0" data-to="67" data-aos data-aos-id="countup:in">0</span>%
+                </h3>
+                <p class="text-gray-700 mb-0">
+                  Remote work
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6">
+
+            <!-- Images -->
+            <div class="row">
+              <div class="col-6 mt-8 mr-n5" data-aos="fade-up">
+
+                <img src="assets/img/photos/photo-10.jpg" alt="..." class="img-fluid mb-4 rounded">
+
+                <img src="assets/img/photos/photo-12.jpg" alt="..." class="img-fluid rounded">
+
+              </div>
+              <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+
+                <img src="assets/img/photos/photo-9.jpg" alt="..." class="img-fluid mb-4 rounded">
+
+                <img src="assets/img/photos/photo-11.jpg" alt="..." class="img-fluid rounded">
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE
+    ================================================== -->
+    <a class="d-block text-decoration-none" id="sectionTwo" data-jarallax data-speed=".8" href="portfolio-case-study.html" style="background-image: url(assets/img/portfolio/portfolio-cover-6.jpg)">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center min-vh-100 py-8 py-md-11">
+          <div class="col-12">
+
+            <!-- Brand -->
+            <div class="img-fluid text-white svg-shim mx-auto mb-5" style="max-width: 370px;">
+              <svg viewBox="0 0 370 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M41.6129 131.892C30.6337 131.453 21.6511 128.435 14.6274 122.829C13.287 121.758 10.0929 118.547 9.02127 117.192C6.17307 113.594 4.23668 110.092 2.94512 106.207C-1.0292 94.2461 1.01624 78.5514 8.79568 61.3266C15.4565 46.58 25.7345 31.9544 43.6659 11.6979C46.3073 8.71727 54.1732 0 54.224 0C54.2428 0 53.8141 0.746124 53.2746 1.65468C48.6122 9.50112 44.6228 18.7434 42.4496 26.7448C38.9584 39.5835 39.3795 50.6015 43.6828 59.1449C46.6513 65.0307 51.7405 70.1288 57.4632 72.947C67.4817 77.8789 82.1495 78.2869 100.062 74.1408C101.295 73.8537 162.407 57.5545 235.866 37.9195C309.325 18.2826 369.438 2.22891 369.447 2.24213C369.468 2.25913 198.781 75.6425 110.175 113.713C96.1424 119.74 92.3899 121.263 85.7929 123.59C68.9293 129.54 53.8235 132.379 41.6129 131.892Z" fill="currentColor"/>
+              </svg>
+
+            </div>
+
+            <!-- Subheading -->
+            <p class="mb-0 font-weight-bold text-center text-uppercase text-white letter-spacing-lg">
+              (Red) Freeruns
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- IMAGE
+    ================================================== -->
+    <a class="d-block text-decoration-none" id="sectionTwo" data-jarallax data-speed=".8" href="portfolio-sidebar.html" style="background-image: url(assets/img/portfolio/portfolio-cover-3.jpg)">
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center min-vh-100 py-8 py-md-11">
+          <div class="col-12">
+
+            <!-- Brand -->
+            <div class="img-fluid text-white svg-shim mx-auto mb-5" style="max-width: 320px;">
+              <svg viewBox="0 0 222 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M193.541 43.3088C183.715 43.3088 175.414 34.9343 175.414 25.0219C175.414 15.109 183.715 6.73451 193.541 6.73451C203.367 6.73451 211.668 15.109 211.668 25.0219H211.667C211.667 28.7822 210.47 32.3195 208.451 35.2639L202.929 29.7423L198.338 34.3335L203.911 39.9068C200.95 42.0382 197.363 43.3088 193.541 43.3088ZM219.245 46.0578L213.727 40.5401C217.167 36.3139 219.204 30.9422 219.204 25.0219C219.204 11.0759 207.931 0.152832 193.541 0.152832C179.15 0.152832 167.877 11.0759 167.877 25.0219C167.877 38.9674 179.15 49.891 193.541 49.891C199.395 49.891 204.732 48.0831 209.005 45L214.654 50.649L219.245 46.0578Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.12109 48.8581V1.18164H8.18227V42.2758H36.9789V48.8581H1.12109Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M121.159 26.569H136.033C143.791 26.569 146.543 21.505 146.543 17.167C146.543 12.8296 143.791 7.76556 136.033 7.76556H121.159V26.569ZM144.462 48.8581L134.07 33.1529H121.159V48.8581H114.098V1.18164H136.747C146.83 1.18164 153.605 7.60498 153.605 17.167C153.605 23.6016 149.323 29.0861 142.697 31.1372L141.294 31.5723L153.411 48.8581H144.462Z" fill="currentColor"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M60.4042 48.8581L75.2352 12.4287L89.9342 48.8581H97.8089L79.0881 4.66057C78.1947 2.55165 76.1268 1.18164 73.8365 1.18164H58.7686V2.41465C58.7686 5.10695 60.9511 7.28943 63.644 7.28943H70.7574L52.5918 48.8581H60.4042Z" fill="currentColor"/>
+              </svg>
+
+            </div>
+
+            <!-- Subheading -->
+            <p class="mb-0 font-weight-bold text-center text-uppercase text-white letter-spacing-lg">
+              Earthtones collection
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- CTA
+    ================================================== -->
+    <section>
+      <div class="container d-flex flex-column">
+        <div class="row align-items-center justify-content-center min-vh-100 py-8 py-md-11">
+          <div class="col-12 col-md-9 col-lg-8 col-xl-7 text-center">
+
+            <!-- Heading -->
+            <h2 class="display-3">Wanna work with us?</h2>
+
+            <!-- Text -->
+            <p class="mb-5 font-size-lg text-gray-800">
+              We work on everything from physical products to digital experiences and are looking forward to hearing from you.
+            </p>
+
+            <!-- Button -->
+            <a class="btn btn-primary rounded-pill" href="#!">
+              Let us know <i class="fe fe-arrow-right ml-2"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <img src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
+
+            <!-- Text -->
+            <p class="text-gray-700 mb-2">
+              A better way to build.
+            </p>
+
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item mr-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Products
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Page Builder
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Styleguide
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Services
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Connect
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Page Builder
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  UI Kit
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Styleguide
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+        
+            <!-- Heading -->
+            <h6 class="font-weight-bold text-uppercase text-gray-700">
+              Legal
+            </h6>
+
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+
+  </body>
+</html>

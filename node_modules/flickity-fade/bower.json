@@ -1,0 +1,31 @@
+{
+  "name": "flickity-fade",
+  "authors": [
+    "David DeSandro <desandrocodes@gmail.com>"
+  ],
+  "description": "Fade between Flickity slides",
+  "main": "flickity-fade.js",
+  "license": "MIT",
+  "homepage": "https://github.com/metafizzy/flickity-fade/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json",
+    "sandbox"
+  ],
+  "dependencies": {
+    "flickity": "^2.2.0",
+    "fizzy-ui-utils": "^2.0.0"
+  },
+  "devDependencies": {
+    "flickity-imagesloaded": "^2.0.0",
+    "qunit": "^2.9.1"
+  },
+  "keywords": [
+    "flickity",
+    "fade"
+  ]
+}
