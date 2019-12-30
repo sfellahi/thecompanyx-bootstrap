@@ -97,14 +97,14 @@ gulp.task('watch', function() {
   gulp.watch([paths.src.html.files, paths.src.partials.files], gulp.series('fileinclude', 'browsersyncReload'));
 });
 
-// gulp.task('scss', function() {
-//   return gulp
-//     .src(paths.src.scss.main)
-//     .pipe(sass().on('error', sass.logError))
-//     .pipe(autoprefixer())
-//     .pipe(gulp.dest(paths.src.css.dir))
-//     .pipe(browsersync.stream());
-// });
+gulp.task('scss', function() {
+  return gulp
+    .src(paths.src.scss.main)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest(paths.src.css.dir))
+    .pipe(browsersync.stream());
+});
 
 gulp.task('fileinclude', function(callback) {
   return gulp
