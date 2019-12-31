@@ -1,0 +1,17 @@
+{
+    "projectName": "thecompanyxbootstrap",
+    "version": "3.0",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "none",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "dist",
+            "BuildCommand": "gulp build",
+            "StartCommand": "gulp"
+        }
+    },
+    "providers": [
+        "awscloudformation"
+    ]
+}
