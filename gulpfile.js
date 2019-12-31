@@ -81,6 +81,7 @@ gulp.task('browsersync', function(callback) {
     server: {
       baseDir: [paths.src.tmp.dir, paths.src.base.dir, paths.base.base.dir]
     },
+    open: false,
   });
   callback();
 });
